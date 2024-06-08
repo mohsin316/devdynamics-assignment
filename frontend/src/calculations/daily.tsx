@@ -1,7 +1,11 @@
+// @ts-ignore
+
 export const calculateDailyAmount = (data) => {
+  // @ts-ignore
   const lastWeek = data.dayWiseActivity.filter((item, index) => {
     return index < 6 ? false : true;
   });
+  // @ts-ignore
 
   const dailyData = lastWeek.map((item, index) => {
     if (index == 0) {

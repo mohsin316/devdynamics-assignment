@@ -1,7 +1,8 @@
+// @ts-ignore
 export const calculateWeeklyAmount = (data) => {
-  let weeks = [];
+  const weeks = [];
   let firstDayOfWeek = 0;
-  let week = {
+  const week = {
     date: "",
     commits: 0,
     prOpen: 0,

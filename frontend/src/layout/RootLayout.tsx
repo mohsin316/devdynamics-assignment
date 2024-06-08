@@ -1,8 +1,8 @@
-import { NavLink, Outlet } from "react-router-dom";
-import LogoDark from "../assets/logoDark.svg";
+import { Outlet } from "react-router-dom";
+// import LogoDark from "../assets/logoDark.svg";
 import LogoLight from "../assets/logoLight.svg";
 import Darkmode from "../assets/Darkmode.svg";
-import Lightmode from "../assets/Lightmode.svg";
+// import Lightmode from "../assets/Lightmode.svg";
 import "./RootLayout.css";
 
 export default function Navbar() {

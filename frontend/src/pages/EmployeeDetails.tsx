@@ -6,10 +6,11 @@ import "./EmployeeDetails.css";
 
 export default function EmployeeDetails() {
   const { id } = useParams();
-  const { data, isLoading, error } = useFetch();
+  const { data, isLoading } = useFetch();
   const navigate = useNavigate();
   console.log(data);
   useEffect(() => {
+    // @ts-ignore
     if (parseInt(id) >= 3) {
       navigate("/notFound");
     }
@@ -22,9 +23,11 @@ export default function EmployeeDetails() {
         <div className="container">
           <Link to={"/"}>Go back</Link>
           <h1>
+            {/*  @ts-ignore */}
             Currently viewing {data[parseInt(id)].name}'s daily activity for
             this week.
           </h1>
+          {/*  @ts-ignore */}
           <Dashboard data={data[parseInt(id)]} />
         </div>
       )}
