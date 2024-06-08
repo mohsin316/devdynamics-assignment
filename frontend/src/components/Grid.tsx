@@ -14,7 +14,7 @@ export default function Grid({ data }: { data: employeeData[] }) {
 
   // Row Data: The data to be displayed.
 
-  const [rowData, setRowData] = useState(
+  const [rowData] = useState(
     data.map((item, index) => {
       return {
         Id: index + 1,
@@ -42,7 +42,7 @@ export default function Grid({ data }: { data: employeeData[] }) {
   };
 
   // Column Definitions: Defines the columns to be displayed.
-  const [colDefs, setColDefs] = useState([
+  const [colDefs] = useState([
     { field: "Id", maxWidth: 50 },
     { field: "Link", cellRenderer: CustomButtonComponent, maxWidth: 100 },
     { field: "Name", filter: true, maxWidth: 185 },
