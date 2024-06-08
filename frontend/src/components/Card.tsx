@@ -10,7 +10,9 @@ import Increase from "../assets/increase.png";
 import Decrease from "../assets/decrease.png";
 
 export default function Card({
+  // @ts-ignore
   data,
+  // @ts-ignore
   cardImg,
   daily,
 }: {

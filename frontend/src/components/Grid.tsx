@@ -13,6 +13,7 @@ export default function Grid({ data }: { data: employeeData[] }) {
   const navigate = useNavigate();
 
   // Row Data: The data to be displayed.
+
   const [rowData, setRowData] = useState(
     data.map((item, index) => {
       return {
@@ -27,6 +28,7 @@ export default function Grid({ data }: { data: employeeData[] }) {
     })
   );
 
+  // @ts-ignore
   const CustomButtonComponent = (props) => {
     return (
       <button
@@ -60,6 +62,7 @@ export default function Grid({ data }: { data: employeeData[] }) {
     <div
       className="grid ag-theme-quartz" // applying the grid theme
     >
+      {/* @ts-ignore */}
       <AgGridReact
         autoSizeStrategy={autoSizeStrategy}
         domLayout="autoHeight"

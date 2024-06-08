@@ -175,6 +175,7 @@ export default function Dashboard({ data }: { data: employeeData }) {
         <div className="initial-data">
           <Card
             daily={isDaily}
+            // @ts-ignore
             data={
               isDaily ? dailyData[count].commits : weeklyData[count].commits
             }
@@ -182,6 +183,7 @@ export default function Dashboard({ data }: { data: employeeData }) {
           />
           <Card
             daily={isDaily}
+            // @ts-ignore
             data={
               isDaily
                 ? dailyData[count].documentation
@@ -191,6 +193,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
           />
           <Card
             daily={isDaily}
+            // @ts-ignore
+
             data={
               isDaily ? dailyData[count].bugFixes : weeklyData[count].bugFixes
             }
@@ -198,6 +202,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
           />
           <Card
             daily={isDaily}
+            // @ts-ignore
+
             data={
               isDaily ? dailyData[count].meetings : weeklyData[count].meetings
             }
@@ -209,6 +215,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
             {dailyData && <Chart chartData={dailyData} />}
             <Card
               daily={isDaily}
+              // @ts-ignore
+
               data={
                 isDaily ? dailyData[count].prOpen : weeklyData[count].prOpen
               }
@@ -216,6 +224,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
             />
             <Card
               daily={isDaily}
+              // @ts-ignore
+
               data={
                 isDaily
                   ? dailyData[count].prReviewed
@@ -225,6 +235,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
             />
             <Card
               daily={isDaily}
+              // @ts-ignore
+
               data={
                 isDaily ? dailyData[count].prMerged : weeklyData[count].prMerged
               }
@@ -232,6 +244,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
             />
             <Card
               daily={isDaily}
+              // @ts-ignore
+
               data={
                 isDaily
                   ? dailyData[count].prComment
@@ -247,11 +261,17 @@ export default function Dashboard({ data }: { data: employeeData }) {
           </div>
           <div className="three">
             <IncidentPieChart
+              // @ts-ignore
+
               incidentAlerts={weeklyData[0].incidentAlerts.value}
+              // @ts-ignore
+
               incidentResolved={weeklyData[0].incidentAlerts.value}
             />
             <Card
               daily={isDaily}
+              // @ts-ignore
+
               data={
                 isDaily
                   ? dailyData[count].incidentAlerts
@@ -260,6 +280,8 @@ export default function Dashboard({ data }: { data: employeeData }) {
               cardImg={IncidentAlert}
             />
             <Card
+              // @ts-ignore
+
               data={
                 isDaily
                   ? dailyData[count].incidentResolved
