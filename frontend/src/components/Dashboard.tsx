@@ -1,15 +1,27 @@
-import { employeeData } from "../vite-env";
+// styles
 import "./Dasboard.css";
-import { calculateDailyAmount } from "../calculations/daily";
 
-import Card from "./Card";
+// typescript import
+import { employeeData } from "../vite-env";
+
+// calculation imports
+import { calculateDailyAmount } from "../calculations/daily";
 import { calculateWeeklyAmount } from "../calculations/Weekly";
+
+// components
+import Card from "./Card";
+import MeanCard from "./MeanCard";
+import ActiveChart from "./ActiveChart";
+import Chart from "./Chart";
+import IncidentPieChart from "./IncidentPieChart";
+
+// imports
 import { useState } from "react";
 
+// images
 import Commit from "../assets/commit.png";
 import Documentation from "../assets/documentaion.png";
 import Bug from "../assets/bug.png";
-
 import IncidentAlert from "../assets/incidentAlert.png";
 import IncidentResolved from "../assets/incidentResolved.png";
 import Prclosed from "../assets/prClosed.png";
@@ -17,10 +29,6 @@ import Prcomment from "../assets/prComment.png";
 import Prmerge from "../assets/prMerge.png";
 import PrOpen from "../assets/prOpen.png";
 import Meeting from "../assets/meeting.png";
-import Chart from "./Chart";
-import IncidentPieChart from "./IncidentPieChart";
-import ActiveChart from "./ActiveChart";
-import MeanCard from "./MeanCard";
 
 type dayData = {
   date: string;

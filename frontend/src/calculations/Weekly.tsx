@@ -16,6 +16,7 @@ export const calculateWeeklyAmount = (data) => {
     documentation: 0,
   };
 
+  // here we calculate the total for each week
   for (let i = 0; i < data.dayWiseActivity.length; i++) {
     week.prOpen += parseInt(data.dayWiseActivity[i].items.children[0].count);
     week.prMerged += parseInt(data.dayWiseActivity[i].items.children[1].count);
@@ -51,6 +52,10 @@ export const calculateWeeklyAmount = (data) => {
       firstDayOfWeek = i + 1;
     }
   }
+
+  // here we choose last week along with the difference between the last week.
+  // if we had more weeks then we'd just loop over them. similar to the daily.tsx.
+  // since we look at only 2 weeks worth of data, we do this.
 
   const weekData = {
     date: weeks[1].date,

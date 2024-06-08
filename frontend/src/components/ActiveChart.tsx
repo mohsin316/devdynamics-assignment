@@ -1,5 +1,5 @@
+// chart import
 import { Chart as ChartJs, ArcElement, Tooltip, Legend } from "chart.js";
-
 import type { ChartData, ChartOptions } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 

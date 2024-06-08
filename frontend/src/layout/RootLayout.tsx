@@ -1,9 +1,12 @@
-import { Outlet } from "react-router-dom";
-// import LogoDark from "../assets/logoDark.svg";
-import LogoLight from "../assets/logoLight.svg";
-import Darkmode from "../assets/Darkmode.svg";
-// import Lightmode from "../assets/Lightmode.svg";
+// styles
 import "./RootLayout.css";
+
+// images
+import LogoLight from "../assets/logoLight.svg";
+import Home from "../assets/home.svg";
+
+// imports
+import { Outlet, Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -14,9 +17,9 @@ export default function Navbar() {
             <div>
               <img src={LogoLight} alt="Logo" />
             </div>
-            <button>
-              <img src={Darkmode} alt="lightmode toggle" />
-            </button>
+            <Link to={"/"}>
+              <img src={Home} alt="lightmode toggle" />
+            </Link>
           </nav>
         </div>
       </header>

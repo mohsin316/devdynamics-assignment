@@ -7,6 +7,7 @@ export const calculateDailyAmount = (data) => {
   });
   // @ts-ignore
 
+  // here we calculate the days difference of data from the previous day
   const dailyData = lastWeek.map((item, index) => {
     if (index == 0) {
       return;

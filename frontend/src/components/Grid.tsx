@@ -1,12 +1,19 @@
+// styles
+import "./Grid.css";
+
+// chartjs
 import { AgGridReact } from "ag-grid-react"; // React Data Grid Component
 import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
-import { useState } from "react";
-import "./Grid.css";
-import { employeeData } from "../vite-env";
 
+// imports
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+// typescript import
+import { employeeData } from "../vite-env";
+
+// images
 import newTab from "../assets/newTab.svg";
 
 export default function Grid({ data }: { data: employeeData[] }) {

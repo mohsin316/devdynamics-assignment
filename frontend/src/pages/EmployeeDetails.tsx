@@ -1,8 +1,15 @@
-import { useNavigate, useParams, Link } from "react-router-dom";
-import { useFetch } from "../hooks/useFetch";
-import { useEffect } from "react";
-import Dashboard from "../components/Dashboard";
+// styles
 import "./EmployeeDetails.css";
+
+// imports
+import { useNavigate, useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
+
+// hooks
+import { useFetch } from "../hooks/useFetch";
+
+// components
+import Dashboard from "../components/Dashboard";
 
 export default function EmployeeDetails() {
   const { id } = useParams();

@@ -1,4 +1,7 @@
+// imports
 import { useEffect, useState } from "react";
+
+// typescript imports
 import { fetchedData } from "../vite-env";
 import { employeeData } from "../vite-env";
 
@@ -19,6 +22,7 @@ export const useFetch = () => {
         // });
 
         // comment the below fetch while in development mode.
+        // the data is stored in my personal server which is the api here.
         const res = await fetch("https://mohsinsapp.xyz/app3/employeeData", {
           signal: controller.signal,
         });

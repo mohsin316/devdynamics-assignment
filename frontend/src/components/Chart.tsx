@@ -1,5 +1,7 @@
+// import styles
 import "./Chart.css";
 
+// import chartjs
 import { Bar } from "react-chartjs-2";
 import type { ChartData, ChartOptions } from "chart.js";
 

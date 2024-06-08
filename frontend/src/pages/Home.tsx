@@ -1,5 +1,10 @@
-import { useFetch } from "../hooks/useFetch";
+// styles
 import "./Home.css";
+
+// hooks
+import { useFetch } from "../hooks/useFetch";
+
+// components
 import Grid from "../components/Grid";
 
 export default function Home() {

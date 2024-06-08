@@ -1,3 +1,4 @@
+// images
 import Increase from "../assets/increase.png";
 
 // @ts-ignore
