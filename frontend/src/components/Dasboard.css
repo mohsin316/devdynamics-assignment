@@ -67,6 +67,11 @@
   cursor: pointer;
 }
 
+.switching-container strong {
+  text-align: center;
+  width: 150px;
+}
+
 .frequency-toggle {
   display: flex;
   align-items: center;
