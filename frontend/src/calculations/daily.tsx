@@ -1,18 +1,5 @@
-import { employeeData } from "../vite-env";
-
-type dailyData = {
-  date: string;
-  items: {
-    children: {
-      count: string;
-      label: string;
-      fillColor: string;
-    }[];
-  };
-};
-
-export const calculateDailyAmount = (data: employeeData) => {
-  const lastWeek: dailyData[] = data.dayWiseActivity.filter((item, index) => {
+export const calculateDailyAmount = (data) => {
+  const lastWeek = data.dayWiseActivity.filter((item, index) => {
     return index < 6 ? false : true;
   });
 

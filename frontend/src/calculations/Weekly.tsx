@@ -1,6 +1,4 @@
-import { employeeData } from "../vite-env";
-
-export const calculateWeeklyAmount = (data: employeeData) => {
+export const calculateWeeklyAmount = (data) => {
   let weeks = [];
   let firstDayOfWeek = 0;
   let week = {
@@ -133,7 +131,7 @@ export const calculateWeeklyAmount = (data: employeeData) => {
 };
 
 const calcPercentage = (prev: number, curr: number) => {
-  if (parseInt(prev) === 0) return 0;
+  if (prev === 0) return 0;
 
   const percentage = (curr - prev) / prev;
   return percentage;

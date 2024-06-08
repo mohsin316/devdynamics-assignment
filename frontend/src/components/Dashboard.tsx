@@ -4,7 +4,7 @@ import { calculateDailyAmount } from "../calculations/daily";
 
 import Card from "./Card";
 import { calculateWeeklyAmount } from "../calculations/Weekly";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Commit from "../assets/commit.png";
 import Documentation from "../assets/documentaion.png";
@@ -88,7 +88,7 @@ type dayData = {
 
 export default function Dashboard({ data }: { data: employeeData }) {
   const dailyData: dayData = calculateDailyAmount(data);
-  const weeklyData: dayData = calculateWeeklyAmount(data);
+  const weeklyData = calculateWeeklyAmount(data);
 
   const [isDaily, setIsDaily] = useState(true);
   const [count, setCount] = useState(0);
