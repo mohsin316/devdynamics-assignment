@@ -19,7 +19,7 @@ export default function Home() {
         Select an employee below to know their daily activity report for the
         week.
       </p>
-      {isLoading && <div className="loader">dhdtrh</div>}
+      {isLoading && <div className="loader"></div>}
       {data && <Grid data={data} />}
     </div>
   );
