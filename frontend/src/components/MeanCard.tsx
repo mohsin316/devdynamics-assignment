@@ -3,7 +3,6 @@ import Increase from "../assets/increase.png";
 
 // @ts-ignore
 export default function MeanCard({ data, cardImg }) {
-  console.log(data);
   return (
     <div className="card">
       <>

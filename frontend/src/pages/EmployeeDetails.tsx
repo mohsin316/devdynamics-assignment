@@ -15,7 +15,6 @@ export default function EmployeeDetails() {
   const { id } = useParams();
   const { data, isLoading } = useFetch();
   const navigate = useNavigate();
-  console.log(data);
   useEffect(() => {
     // @ts-ignore
     if (parseInt(id) >= 3) {

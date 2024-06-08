@@ -26,7 +26,6 @@ Chartjs.register(
 );
 
 export default function Chart({ chartData }: { chartData: dayData }) {
-  console.log(chartData);
   const options: ChartOptions<"bar"> = {
     responsive: true,
     scales: {
