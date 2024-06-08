@@ -1,0 +1,6 @@
+.chart {
+  grid-column: 1/3;
+  background-color: hsl(var(--card-clr-light));
+  border-radius: 8px;
+  padding-top: 0.5rem;
+}

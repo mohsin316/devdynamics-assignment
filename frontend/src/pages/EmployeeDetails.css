@@ -1,0 +1,18 @@
+.employee-detail-container {
+  margin-inline: auto;
+}
+.employee-detail-container h1 {
+  margin-top: 3rem;
+  max-width: 45rem;
+}
+
+.employee-detail-container a {
+  position: absolute;
+  top: 150px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.employee-detail-container a:hover {
+  text-decoration: underline;
+}

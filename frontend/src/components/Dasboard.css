@@ -1,0 +1,114 @@
+.dashboard-container {
+  margin-top: 3rem;
+  margin-inline: auto;
+}
+
+.dashboard-container .date-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard .initial-data {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dashboard .main-data {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 45% 1fr 1fr;
+}
+
+.dashboard .main-data .one {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dashboard .main-data .three {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard .main-data .two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-inline: 1rem;
+}
+
+.incidentChart {
+  height: 248px;
+  background-color: hsl(var(--card-clr-light));
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.switching-container {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.switching-container button {
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  height: 27px;
+  width: 25px;
+  background: transparent;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  cursor: pointer;
+}
+
+.frequency-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  border-radius: 99px;
+  background-color: black;
+  border: none;
+  width: 50px;
+  height: 25px;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle-btn .thumb {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 99px;
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 5px;
+  top: 55%;
+  transform: translateY(-55%);
+}
+
+.toggle-btn.toggled {
+  background-color: black;
+}
+
+.toggle-btn.toggle-btn.toggled .thumb {
+  left: calc(50px - 23px);
+}
+
+.frequency-toggle .toggle-label {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

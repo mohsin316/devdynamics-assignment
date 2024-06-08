@@ -1,0 +1,14 @@
+header {
+  margin-top: 3rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+}
