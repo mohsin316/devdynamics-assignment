@@ -17,7 +17,7 @@ export default function EmployeeDetails() {
   const navigate = useNavigate();
   useEffect(() => {
     // @ts-ignore
-    if (parseInt(id) >= 3) {
+    if (parseInt(id) > 3) {
       navigate("/notFound");
     }
   }, [data, navigate, id]);

@@ -72,6 +72,7 @@ export default function Grid({ data }: { data: employeeData[] }) {
       {/* @ts-ignore */}
       <AgGridReact
         autoSizeStrategy={autoSizeStrategy}
+        allowDragFromColumnsToolPanel={false}
         domLayout="autoHeight"
         rowData={rowData}
         columnDefs={colDefs}
